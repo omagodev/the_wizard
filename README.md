@@ -20,7 +20,7 @@ A criação do Atlas foi inspirada por uma narrativa moderna de "Cyberpunk Real"
 
 A faísca veio da história de **Chungin "Roy" Lee**, o estudante da Columbia que viralizou com o **Cluely** — uma ferramenta polêmica para "hackear" entrevistas, analisando a tela e o áudio em tempo real para sugerir respostas. Roy foi suspenso, mas sua startup levantou milhões e atraiu milhares de usuários, provando o poder da IA em tempo real.
 
-Também nos inspiramos em **Lucas Montano**, criador do **Persua**, que também explorou conceitos inovadores de assistência em tempo real que também se inspirou no próprio projeto do Roy.
+Também nos inspiramos em **Lucas Montano**, criador do **Persua**, que também explorou conceitos inovadores de assistência em tempo real e serviu de inspiração para o próprio projeto do Roy.
 
 O Atlas nasce dessa mesma premissa de **inteligência aumentada em tempo real**, mas com um propósito diferente: não apenas dar respostas, mas ser um companheiro de jornada, um "segundo cérebro" que vive no seu monitor.
 
@@ -97,6 +97,8 @@ O App permite um alto grau de customização técnica:
 
 ## 7. Instalação e Requisitos
 
+**📥 Download:** [Release 1.0.15 (GitHub)](https://github.com/omagodev/the_wizard/releases/tag/1.0.15)
+
 1.  **Chave de API:** Requer uma chave da OpenAI (ou Ollama local).
 2.  **Áudio:** Para capturar o áudio do sistema (Modo Ouvido), recomenda-se o uso de um cabo virtual (como VB-Cable) se o sistema operacional não suportar loopback nativo.
 3.  **Permissões:** Deve ter permissão de captura de tela e microfone.
@@ -156,4 +158,4 @@ Agradecemos o seu feedback para tornar o Atlas cada vez melhor!
 
 ---
 
-_Documentação gerada para a versão 1.0.15._
+_Documentação gerada para a versão 1.0.16._
