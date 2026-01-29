@@ -122,15 +122,16 @@ Você pode enviar notificações ou comandos externos para a Atlas via HTTP POST
   }
   ```
 
-### 🥩 Alimentação e Energia
+### 🥩 Alimentação, Energia e Saúde
 
-A Atlas possui um sistema vital simulado:
+A Atlas possui um sistema vital simulado que interage com seu ciclo de desenvolvimento:
 
-- **Fome (Comida):** Decai com o tempo. Se chegar a 0, ela fica fraca.
+- **Fome (Energia):** Decai com o tempo (0.25% a cada ciclo de ~15s, totalizando 1% por minuto). Se chegar a 0, ela entra em estado de inanição.
+- **Saúde (Progresso):** A barra de saúde representa o **Auto-Desenvolvimento** da Atlas (e não o seu código). Ela enche automaticamente (1% a cada 15s).
+  - **Decaimento:** A saúde SÓ diminui se a Fome estiver em 0 (Perdendo 2% de saúde a cada 15s).
 - **Como alimentar:** Clique no ícone de **Comida (🥩)**.
 - **Custo:** Você precisa ter "Comida Disponível" no inventário.
-- **Ganhando Comida:** Complete 5 ciclos de desenvolvimento (barra de progresso circular) para ganhar +1 item de comida.
-- **Limite:** Máximo de 10 itens no estoque.
+- **Ganhando Comida:** Complete 5 ciclos de desenvolvimento (barra de saúde/progresso completa 5x) para ganhar +1 item de comida.
 
 ### 🧠 Sistema de Memória
 
@@ -140,7 +141,7 @@ A Atlas possui um sistema vital simulado:
 
 ### 💀 Morte e Renascimento
 
-- **Morte:** Se a Atlas for negligenciada ao extremo (Saúde 0), ela "morre".
+- **Morte:** Se a Atlas ficar sem comida (Fome 0) e sua saúde decair até 0 devido à inanição, ela "morre".
 - **Tela de Kill Switch:** Uma tela especial aparece bloqueando o uso.
 - **Renascimento:** Você pode revivê-la (via botão/comando), o que reseta seus atributos para o padrão de fábrica, permitindo um novo começo.
 
